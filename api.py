@@ -3,9 +3,9 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 livros = [
-    {'id': 1, 'título': '1984', 'autor': 'George Orwell'},
-    {'id': 2, 'título': 'O Senhor dos Anéis', 'autor': 'J. R. R. Tolkien'},
-    {'id': 3, 'título': 'O Prisioneiro de Azkhaban', 'autor': 'J. K. Rowling'},
+    {'id': 1, 'titulo': '1984', 'autor': 'George Orwell'},
+    {'id': 2, 'titulo': 'O Senhor dos Anéis', 'autor': 'J. R. R. Tolkien'},
+    {'id': 3, 'titulo': 'O Prisioneiro de Azkhaban', 'autor': 'J. K. Rowling'},
 ]
 
 @app.route('/api/livros', methods=['GET'])
